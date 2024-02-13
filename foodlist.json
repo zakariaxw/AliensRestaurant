@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Glophnarg Soup",
+    "color": "Purple",
+    "taste": "Sour",
+    "origin": "Planet Zorblat"
+  },
+  {
+    "name": "Plorg Delight",
+    "color": "Blue",
+    "taste": "Savory",
+    "origin": "Galactic Cluster Alpha-12"
+  },
+  {
+    "name": "Glophnarg Soup",
+    "color": "Purple",
+    "taste": "Sour",
+    "origin": "Planet Zorblat"
+  },
+  {
+    "name": "Xyzzel Fruit",
+    "color": "Green",
+    "taste": "Sweet",
+    "origin": "Moon of Nebulon-7"
+  },
+  {
+    "name": "Zorgron Noodles",
+    "color": "Orange",
+    "taste": "Spicy",
+    "origin": "Planet Glorbon"
+  },
+  {
+    "name": "Grell Bark",
+    "color": "Brown",
+    "taste": "Earthy",
+    "origin": "Forest Moon of Endor"
+  },
+  {
+    "name": "Krakkle Chips",
+    "color": "Red",
+    "taste": "Salty",
+    "origin": "Volcanic Planet Krakatoa"
+  },
+  {
+    "name": "Nebula Nectar",
+    "color": "Silver",
+    "taste": "Refreshing",
+    "origin": "Nebula NGC 602"
+  },
+  {
+    "name": "tacos",
+    "taste": "delicious",
+    "origin": "morocco",
+    "drink": "juice"
+  },
+  {
+    "name": "tajine",
+    "taste": "delicious",
+    "origin": "morocco",
+    "drink": "the"
+  },
+  {
+    "name": "Couscous",
+    "color": "Yellow",
+    "taste": "Delicious",
+    "origin": "Planet Earth"
+  }
+]
