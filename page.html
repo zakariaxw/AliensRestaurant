@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Commandes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container mt-4">
+        <h2>Votre Commande</h2>
+        <ul id="commandList" class="list-group">
+            <!-- Les commandes seront ajoutées dynamiquement ici -->
+        </ul>
+        <button id="modifyBtn" class="btn btn-primary mt-3" onclick="modifyCommand()">Modifier la Commande</button>
+        <button id="deleteBtn" class="btn btn-danger mt-3" onclick="deleteCommand()">Supprimer la Commande</button>
+    </div>
+
+    <script>
+        // Fonction pour charger la commande du client au chargement de la page
+        document.addEventListener('DOMContentLoaded', loadCommand);
+
+        // Fonction pour charger la commande du client
+        function loadCommand() {
+            // Récupérer le client ID (vous devrez remplacer ceci par le vrai ID du client)
+            const clientId = 1;  // Remplacez par le vrai ID du client
+
+            fetch(`/commands/${clientId}`)
+                .then(response => response.json())
+                .then(data => {
+                    const commandList = document.getElementById('commandList');
+                    commandList.innerHTML = '';  // Effacer les éléments existants
+
+                    data.forEach(command => {
+                        const listItem = document.createElement('li');
+                        listItem.className = 'list-group-item';
+                        listItem.textContent = command.items.join(', ');
+
+                        commandList.appendChild(listItem);
+                    });
+                })
+                .catch(error => console.error('Erreur:', error));
+        }
+
+        // Fonction pour modifier la commande du client
+        function modifyCommand() {
+            // Ici, vous pouvez mettre en œuvre la logique pour modifier la commande
+            alert('Implémentez la logique de modification ici');
+        }
+
+        // Fonction pour supprimer la commande du client
+        function deleteCommand() {
+            // Ici, vous pouvez mettre en œuvre la logique pour supprimer la commande
+            alert('Implémentez la logique de suppression ici');
+        }
+    </script>
+
+</body>
+
+</html>
