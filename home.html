@@ -11,6 +11,7 @@
         body {
             background-color: #f8f9fa;
         }
+
         .form-card {
             background-color: #fff;
             border-radius: 10px;
@@ -29,18 +30,29 @@
                     <form action="/adduser" method="POST">
                         <div class="mb-4">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" />
+                            <input type="text" id="name" name="name" class="form-control"
+                                placeholder="Enter your name" />
                         </div>
                         <div class="mb-4">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" />
+                            <input type="email" id="email" name="email" class="form-control"
+                                placeholder="Enter your email" />
                         </div>
                         <div class="mb-4">
                             <label for="age" class="form-label">Age</label>
-                            <input type="number" id="age" name="age" class="form-control" placeholder="Enter your age" />
+                            <input type="number" id="age" name="age" class="form-control"
+                                placeholder="Enter your age" />
                         </div>
                         <button type="submit" class="btn btn-primary btn-block">Submit</button>
+
+
                     </form>
+                    <br>
+                    <form action="/showusers" method="get">
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary btn-block">Show Users</button>
+                    </div>
+                </form>
                 </div>
             </div>
         </div>

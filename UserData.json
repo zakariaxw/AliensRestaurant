@@ -28,5 +28,11 @@
     "name": "testupdated",
     "email": "za63@gmail.com",
     "age": "44"
+  },
+  {
+    "id": 6,
+    "name": "user",
+    "email": "saadakr11@gmail.com",
+    "age": "45"
   }
 ]
